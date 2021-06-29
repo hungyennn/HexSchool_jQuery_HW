@@ -1,0 +1,355 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+	line-height: 1.5;
+}
+a{
+	text-decoration: none;
+}
+img{
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+@import
+url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500&display=swap");
+
+.wrap{
+	max-width: 1240px;
+	margin:0 auto;
+	font-family: "Noto Sans TC", sans-serif;
+}
+
+.socialMedia{
+	background: #f6f6f6;
+}
+.socialMedia ul{
+	display: flex;
+	justify-content: flex-end;
+}
+.socialMedia li{
+	display: flex;
+}
+.socialMedia li:first-child:after{
+	content: "|";
+	color: gray;
+	padding: 5px 0px;
+	margin: 3px;
+}
+.socialMedia a{
+	display: flex;
+	align-items: center;
+	padding: 5px;
+	margin: 5px 0;
+
+}
+.socialMedia a img{
+	margin-right: 5px;
+}
+.fb{
+	color: #4460A0;
+	font-weight: bold;
+	border: 3px solid transparent;
+}
+.fb:hover{
+	border-bottom: 3px solid #4460A0;
+}
+.twitter{
+	color: #00AAEC;
+	font-weight: bold;
+	border: 3px solid transparent;
+}
+.twitter:hover{
+	border-bottom: 3px solid #00AAEC;
+}
+.header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header h1 a{
+  background-image: url(../img/logo.png);
+  display: block;
+  width: 224px;
+  height: 50px;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.menu{
+	display: flex;
+}
+.menu li{
+  position: relative;
+}
+.menu a{
+	color: #00CC99;
+	padding: 10px;
+	margin-left: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	border-bottom: 5px solid transparent;
+
+}
+.menu a:hover{
+	border-bottom: 5px solid #00CC99;
+}
+.menu-column{
+  position: absolute;
+  display: none;
+  z-index: 99;
+  width: 100%; 
+}
+
+.menu-column > li > a{
+  display: block;
+ 
+  padding: 3px;
+  text-align: center;
+  background-color: #26d0a1;
+  color:#fff;
+	border-bottom: 0px solid transparent;
+}
+
+.menu-column > li > a:hover{
+  background-color: #1a916f;
+  border-bottom: 0px solid transparent;
+}
+
+
+
+.head-bg{
+  position: relative;
+}
+
+.bg1  {
+  background: url("../img/bg_course.png") no-repeat;
+  background-size: cover ;
+  width: 1025px;
+  height: 560px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.bg2  {
+  background: url("../img/bg_index.png") no-repeat;
+  background-size: cover ;
+  width: 1025px;
+  height: 560px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.bg3 {
+  background: url("../img/bg_QA.png") no-repeat;
+  background-size: cover ;
+  width: 1025px;
+  height: 560px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.swiper-container {
+  height: 560px;
+}
+
+.bg-page {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 40px 1px;
+  z-index: 99;
+}
+
+.bg-page h2 {
+  color: #ffffff;
+  font-size: 38px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.course{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 60px;
+}
+.item{
+	width: 300px;
+	padding: 15px;
+	margin-top: 25px;
+	box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.itemImg{
+		width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+.item h3{
+	font-size: 24px;
+	margin-top: 12px;
+	font-weight: bold;
+	text-align: center;
+}
+.item p{
+	margin-top: 10px;
+}
+.item ol {
+  margin-left: 30px;
+  list-style-type: disc;
+}
+.difference{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 60px;
+}
+.difference h2{
+	font-weight: bold;
+	font-size: 30px;
+}
+.difference table{
+	margin-top: 30px;
+	width: 80%;
+}
+.difference table tr{
+	border-top:solid 1px #dddddd;
+	border-bottom:solid 1px #dddddd;
+}
+.difference table tr:hover{
+	background: #E8FFF5;
+}
+.difference table th{
+	background: #f7f7f7;
+	padding: 10px 20px;
+	text-align-last: left;
+	font-weight: bold;
+}
+.difference table td{
+	padding: 10px 20px;
+}
+.important{
+	color: #00A67B;
+	font-weight: bold;
+}
+.apply{
+	margin-top: 60px;
+	background: linear-gradient(#00664D, #009671);
+	color: #fff;
+	font-weight: bold;
+	padding: 30px;
+}
+.apply h2{
+	font-size: 30px;
+	text-align: center;
+}
+.info{
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-around;
+}
+.msg{
+	width: 45%;
+	border-radius: 5px;
+	resize: none;
+ 	border: none;
+}
+.personal{
+	width: 45%;
+  	display: flex;
+  	flex-direction: column;
+}
+.personal label{
+	margin-bottom: 5px;
+}
+.personal input{
+	margin-bottom: 10px;
+	padding: 10px;
+  	border-radius: 5px;
+  	border: none;
+}
+.btn{
+	margin-top: 10px;
+	background: #00CC99;
+	border-radius: 5px;
+	padding: 10px;
+	border: none;
+	width: 70px;
+	align-self: flex-end;
+	color: #fff;
+	cursor: pointer;
+}
+.btn:hover{
+	color: #00CC99;
+	background: #F0FFF0;
+}
+.footer{
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 10px;
+}
+.footer li a{
+	color: #E12F81;
+  	border-bottom: 2px solid transparent;
+}
+.footer li a:hover{
+	border-bottom: 2px solid #E12F81;
+}
+.top{
+	width: 3%;
+	position: fixed;
+	right: 1%;
+	bottom: 1%;
+}
